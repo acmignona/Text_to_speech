@@ -13,24 +13,20 @@ def convert_to_speech():
 
     if text and filename:
         tts = gTTS(text, lang='en')
-        filename = filename + ".mp3"  # Append the file extension if not provided
-
+        filename = filename + ".mp3"
         tts.save(filename)
         message_label.config(text=f"Conversion complete. File saved as {filename}", fg='red')
 
-
-# Create and configure widgets
+# GUI Form fields
 text_label = tk.Label(app, text="Enter Text to Generate Speech Audio:")
 text_entry = tk.Entry(app, width=40)
-
 filename_label = tk.Label(app, text="Enter Filename (without extension):")
 filename_entry = tk.Entry(app, width=40)
 convert_button = tk.Button(app, text="Convert to Speech", command=convert_to_speech, bg ='brown', fg='white')
-
 message_label = tk.Label(app, text="")
 message_label.pack()  # Add the message label to the GUI
 
- ## GUI - Picture
+ ## GUI - German Shepherd Picture. 
 logo = Image.open('gsd2.png')
 logo = logo.resize((75, 75))  # resizing the photo since it was massive.
 logo = ImageTk.PhotoImage(logo)
