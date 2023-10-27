@@ -1,5 +1,5 @@
 # Description:
-This is a simple text-to-speech application that utilizes Google's Text-to-Speech Python library. This will generate an MP3 audio file with whatever text is entered within the GUI. I created this GUI for the Telecom team who had a need to use this library, but they weren't familiar with with how to use Python.
+This is a simple text-to-speech application that utilizes Google's Text-to-Speech Python library. This will generate an MP3 audio file with whatever text is entered within the GUI. I created this GUI for the Telecom team who had a need to use this library, but they weren't familiar with with how to use Python. Python code included for transparency, but not required to run executable. 
 
 # How to use: 
 
